@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Translator App</h1>
+    </div>
+
+    <div id="container">
+        <div id="input">
+            <select name="input-lang" id="input-lang">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="cs">Chineese</option>
+                <option value="nl">Dutch</option>
+                <option value="eo">Esperanto</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ko">Korean</option>
+                <option value="ja">Japanese</option>
+                <option value="pt">Portuguese</option>
+                <option value="es">Spanish</option>
+                <option value="tr">Turkish</option>
+                <option value="fa">Persian</option>
+            </select>
+            <textarea name="input-text" id="input-text" placeholder="Write Something Here..........!"
+                oninput="debounce(main,800)"></textarea>
+        </div>
+        <div id="output">
+            <select name="out-lang" id="out-lang">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="cs">Chineese</option>
+                <option value="nl">Dutch</option>
+                <option value="eo">Esperanto</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="el">Greek</option>
+                <option value="hu">Hungarian</option>
+                <option value="id">Indonesian</option>
+                <option value="it">Italian</option>
+                <option value="ko">Korean</option>
+                <option value="ja">Japanese</option>
+                <option value="pt">Portuguese</option>
+                <option value="es">Spanish</option>
+                <option value="tr">Turkish</option>
+                <option value="fa">Persian</option>
+            </select>
+            <div id="output-value"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
